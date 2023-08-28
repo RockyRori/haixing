@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>海星快乐屋</title>
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+		<meta http-equiv="Window-target" content="_blank">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="expires" content="Sat,01Jan202220:20:20GMT">
+		<meta name="application-name" content="海星快乐屋">
+		<meta name="keywords" content="诗词, 海星快乐屋, steam推荐, 小游戏">
+		<meta name="description" content="在使用过程中遇到任何问题请发邮件到管理员邮箱。">
+		<meta name="author" content="Rocky">
+		<meta name="format-detection" content="telphone=no, email=no" />
+		<meta name="robots" content="noindex,nofollow" />
+		<meta name="copyright" content="版权所有，侵权必究" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.8, user-scalable=no">
+		<meta http-equiv="Site-Enter" contect="revealTrans(Duration=2.0, Transtion=12)">
+		<meta http-equiv="Site-Exit" contect="revealTrans(Duration=2.0, Transtion=23)">
+	</head>
+
+	<body>
+		<noscript>
+			<strong>如果网页内显示这行字，说明<%= htmlWebpackPlugin.options.title %>不能正常工作。请启用JavaScript之后再重新加载。</strong>
+		</noscript>
+		<div id="app"></div>
+		<script type="text/javascript">
+			! function(e, t, a) {
+				function r() {
+					for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e]
+						.y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" +
+						s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale +
+						") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+					requestAnimationFrame(r)
+				}
+		
+				function n() {
+					var t = "function" == typeof e.onclick && e.onclick;
+					e.onclick = function(e) {
+						t && t(), o(e)
+					}
+				}
+		
+				function o(e) {
+					var a = t.createElement("div");
+					a.className = "heart", s.push({
+						el: a,
+						x: e.clientX - 5,
+						y: e.clientY - 5,
+						scale: 1,
+						alpha: 1,
+						color: c()
+					}), t.body.appendChild(a)
+				}
+		
+				function i(e) {
+					var a = t.createElement("style");
+					a.type = "text/css";
+					try {
+						a.appendChild(t.createTextNode(e))
+					} catch (t) {
+						a.styleSheet.cssText = e
+					}
+					t.getElementsByTagName("head")[0].appendChild(a)
+				}
+		
+				function c() {
+					return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+				}
+				var s = [];
+				e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e
+					.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function(e) {
+						setTimeout(e, 1e3 / 60)
+					}, i(
+						".heart{width: 16px;height: 16px;position: fixed;background: #f00;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;position: fixed;}.heart:after{top: -8px;}.heart:before{left: -8px;}"
+					), n(), r()
+			}(window, document);
+		</script>
+		<style>
+			.snow {
+				position: absolute;
+				width: 28px;
+				height: 2px;
+				border-radius: 22px;
+				background-color: #ffffff;
+			}
+		
+			.snow:before,
+			.snow:after {
+				content: " ";
+				position: absolute;
+				width: inherit;
+				height: inherit;
+				border-radius: inherit;
+				background-color: inherit;
+			}
+		
+			.snow:before {
+				transform: rotate(-60deg);
+			}
+		
+			.snow:after {
+				transform: rotate(60deg);
+			}
+		</style>
+	</body>
+</html>

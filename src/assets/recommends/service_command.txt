@@ -1,0 +1,30 @@
+cd /usr/local/nginx/sbin
+#重启之后输3行，没重启服务器输2行
+/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+./nginx -s reload
+
+
+screen -S myDSTserver
+./startup.sh
+c_shutdown()
+
+
+service mysqld status
+mysql -u root -p
+
+
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'qwertyuiop';
+flush privileges;
+
+
+cd /usr/local/
+screen -S nginx
+java -jar benifit-0.0.1.jar
+
+
+cd /usr/local/nginx/
+java -jar benifit-0.0.1.jar
+netstat -anp | grep 8800
+
+个人网站认证
+i may do some guess game in my website

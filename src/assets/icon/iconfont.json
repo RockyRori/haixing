@@ -1,0 +1,30 @@
+{
+  "id": "2553939",
+  "name": "iconfont",
+  "font_family": "fontFamily",
+  "css_prefix_text": "iconfont-",
+  "description": "我常用的阿里巴巴图标",
+  "glyphs": [
+    {
+      "icon_id": "8760187",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "9186714",
+      "name": "QQ",
+      "font_class": "QQ",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "18368075",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    }
+  ]
+}

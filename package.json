@@ -1,0 +1,29 @@
+{
+  "name": "GameCenter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^2.6.5",
+    "dns": "^0.2.2",
+    "element-ui": "^2.15.2",
+    "js-cookie": "^2.2.1",
+    "lemon-imui": "^1.7.3",
+    "mqtt": "^4.2.8",
+    "nodemailer": "^6.6.2",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "vue": "^2.6.10",
+    "vue-pdf": "^4.3.0",
+    "vue-router": "^3.5.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
