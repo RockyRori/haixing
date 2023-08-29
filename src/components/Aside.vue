@@ -80,7 +80,7 @@
 				<div class="sub">中华新韵</div>
 			</el-menu-item>
 		</el-submenu>
-		<el-submenu index="5">
+		<el-submenu index="5" v-if="false">
 			<template slot="title"><i class="el-icon-s-opportunity tittle">教程</i></template>
 			<el-menu-item index="501">
 				<div class="sub">PowerDesigner</div>

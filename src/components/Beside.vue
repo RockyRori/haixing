@@ -57,7 +57,7 @@
 			this.comments.name = this.users.name;
 			this.comments.game = this.$route.path.substring(1);
 			this.GamePlay();
-			this.loading();
+			// this.loading();
 		},
 		data() {
 			return {

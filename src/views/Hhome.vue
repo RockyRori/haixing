@@ -6,7 +6,7 @@
 		  <el-col :span="21"><Hhome></Hhome></el-col>
 		</el-row>
 		<Footer></Footer>
-		<Chat></Chat>
+		<!-- <Chat></Chat> -->
 	</div>
 </template>
 

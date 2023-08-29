@@ -50,7 +50,7 @@
 <script>
 	export default {
 		mounted() {
-			this.loading();
+			// this.loading();
 		},
 		data() {
 			return {
