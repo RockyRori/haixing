@@ -2,7 +2,7 @@ module.exports = {
 	publicPath: './',
 	devServer: {
 		host: 'localhost',
-		port: 80,
+		port: 8000,
 		open: true, // 自动打开浏览器
 		proxy: {
 			'/backend': {
