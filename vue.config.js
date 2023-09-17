@@ -1,8 +1,8 @@
 module.exports = {
-	publicPath: './',
+	publicPath: process.env.NOD_ENV === 'production' ? 'haixing' : '/',
 	devServer: {
 		host: 'localhost',
-		port: 80,
+		port: 8000,
 		open: true, // 自动打开浏览器
 		proxy: {
 			'/backend': {
