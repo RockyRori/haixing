@@ -16,11 +16,9 @@ npm install
 
 npm run dev
 
-http://127.0.0.1:3000/
+http://127.0.0.1:8000/
 
 # 项目结构
-
-以防失效在空闲时间把本教程引用的链接亲自试一遍写到技术博客中再替换成站内链接。
 
 rockyrori
 ├─.astro
@@ -116,3 +114,31 @@ env.d.ts 在本地运行时生成，可忽略。
 README.md 介绍了项目的结构和原理。
 
 content 填充文章实际内容，使用Markdown组织。
+
+## Project Setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

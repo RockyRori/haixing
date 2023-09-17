@@ -1,5 +1,5 @@
 module.exports = {
-	publicPath: './',
+	publicPath: provess.env.NOD_ENV === 'production' ? 'haixing' : './',
 	devServer: {
 		host: 'localhost',
 		port: 8000,
