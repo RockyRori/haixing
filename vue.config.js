@@ -1,5 +1,5 @@
 module.exports = {
-	publicPath: process.env.NOD_ENV === 'production' ? 'haixing' : '/',
+	publicPath: process.env.NOD_ENV === 'production' ? 'haixing' : './',
 	devServer: {
 		host: 'localhost',
 		port: 8000,
