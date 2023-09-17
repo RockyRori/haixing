@@ -12,7 +12,7 @@ cd dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'manual deploy via commit'
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:RockyRori/haixing.git master:gh-pages
